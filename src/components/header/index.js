@@ -76,9 +76,9 @@ const Header = () => {
               <img src={Lunar} alt="" className="w-4 mr-2" />
               <span className="font-medium">Buy at Lunar Exchange</span>
             </button> */}
-            <div className="text-center">
+            <div className="text-left">
               Audited by
-              <img src={Image} alt="" className="w-40" />
+              <img src={Image} alt="" className="w-40 mt-1" />
             </div>
           </li>
         </ul>

@@ -1,0 +1,130 @@
+.banner {
+  background-image: url(../assets/images/bannerBg@2.png);
+  background-size: cover;
+}
+.banner-button {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.48) 0%,
+    rgba(255, 255, 255, 0.18) 100%
+  );
+  backdrop-filter: blur(15px);
+  border-radius: 24px;
+  box-shadow: 0px 48px 60px rgba(119, 118, 156, 0.3);
+}
+
+.buy {
+  background-image: url(../assets/images/buy-bg.png);
+  background-size: cover;
+}
+
+.document-bg {
+  background-image: url(../assets/images/document-bg.png);
+  background-size: cover;
+}
+
+.roadmap {
+  background-image: url(../assets/images/roadmap-bg.png);
+  background-size: cover;
+}
+
+.faq {
+  background-image: url(../assets/images/faq.png);
+  background-size: cover;
+}
+
+.donate {
+  background-image: url(../assets/images/donate.png);
+  background-size: cover;
+}
+
+.copy-board {
+  transform: translateY(-50%);
+}
+.progressbar {
+  max-width: 800px;
+  width: 100%;
+  /* margin-top: 40px; */
+  margin: 40px auto 0;
+}
+.progress-container {
+  height: 40px;
+  border-radius: 30px;
+  margin: 10px auto 0 auto;
+}
+@media (max-width: 768px) {
+  .progress-container {
+    height: 20px;
+  }
+}
+.progress-inner {
+  width: 50%;
+  height: 100%;
+  margin: 0;
+  border-radius: inherit;
+}
+
+.details {
+  background-image: url(../assets/images/details-bg.png);
+  background-size: cover;
+}
+.tokenomic .big-text {
+  font-size: 170px;
+}
+
+.section-title {
+  position: relative;
+}
+.section-title h2 {
+  position: relative;
+  z-index: 3;
+}
+.section-title img {
+  width: 120px;
+}
+.section-title .title-back {
+  position: absolute;
+  z-index: 1;
+  opacity: 0.07;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 170px;
+  word-break: keep-all;
+  width: 100%;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  max-width: 300px;
+  width: 100%;
+
+  height: 100%;
+  padding: 10px 10px 0 10px;
+  transition: all 0.3s;
+  z-index: 99999;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+@media (max-width: 768px) {
+  .section-title .title-back {
+    font-size: 120px;
+    display: none;
+  }
+  .tokenomic .big-text {
+    font-size: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .section-title .title-back {
+    font-size: 120px;
+    display: none;
+  }
+  .tokenomic .big-text {
+    font-size: 120px;
+  }
+}

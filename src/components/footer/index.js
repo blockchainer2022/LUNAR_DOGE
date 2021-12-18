@@ -1,6 +1,7 @@
 import Clipboard from "../clipboard";
-import Logo from "../../assets/images/footer-logo.png";
+import Logo from "../../assets/images/Logo.png";
 import { FaTelegramPlane, FaTwitter, FaInstagram } from "react-icons/fa";
+import Lunar from "../../assets/images/lunar.png";
 
 const iconList = [
   {
@@ -24,21 +25,17 @@ const Footer = () => {
         <div className="">
           <Clipboard />
 
-          <div className="grid sm:grid-cols-2 gap-10 max-w-3xl mx-auto mt-4 items-center">
+          <div className="grid sm:grid-cols-3 gap-10  mx-auto mt-4 items-center">
             <div>
               <div>
-                <img src={Logo} alt="" />
+                <img src={Logo} alt="" className="mx-auto" />
               </div>
-              <p className="text-white text-sm font-normal mt-8 ">
-                Baby Doge is not an investment and created as a joke & meme
-                parody like doge. Baby Doge makes no promises and is not
-                responsible for any losses or errors use at your own risk. Baby
-                Doge is not affiliated with DogeCoin or DogeCoin Foundation.
-              </p>
             </div>
             <div>
-              <p className="text-white font-bold text-xl">Follow Us</p>
-              <ul className="grid grid-flow-col gap-4  justify-start mx-auto lg:mx-0 max-w-sm w-full text-white mt-10 flex-wrap">
+              <p className="text-white font-bold text-xl text-center">
+                Follow Us
+              </p>
+              <ul className="grid grid-flow-col gap-4  justify-center lg:mx-0 w-full text-white mt-10 flex-wrap ">
                 {iconList.map((v, i) => (
                   <li key={i}>
                     <a
@@ -50,6 +47,17 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+            <div>
+              <p className="text-white font-bold text-xl text-center">
+                Buy Lunar
+              </p>
+              <button className="flex items-center mt-10 bg-dark-400 rounded-md  py-2.5 px-4 mx-auto ">
+                <img src={Lunar} alt="" className="w-4 mr-2" />
+                <span className="font-medium text-white">
+                  Buy at Lunar Exchange
+                </span>
+              </button>
             </div>
           </div>
         </div>

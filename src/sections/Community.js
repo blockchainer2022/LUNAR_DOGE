@@ -4,9 +4,9 @@ import Tele from "../assets/images/telegram.png";
 import Telegrammini from "../assets/images/telegrammini.png";
 import TwitterMini from "../assets/images/twittermini.png";
 import Facebook from "../assets/images/facebook.png";
-import Instagram from "../assets/images/instagram.png";
-import discord from "../assets/images/discord.png";
-import reddit from "../assets/images/reddit.png";
+// import Instagram from "../assets/images/instagram.png";
+// import discord from "../assets/images/discord.png";
+// import reddit from "../assets/images/reddit.png";
 
 const socialLinks = [
   {
@@ -21,18 +21,18 @@ const socialLinks = [
     icon: Facebook,
     link: "#",
   },
-  {
-    icon: Instagram,
-    link: "#",
-  },
-  {
-    icon: discord,
-    link: "#",
-  },
-  {
-    icon: reddit,
-    link: "#",
-  },
+  // {
+  //   icon: Instagram,
+  //   link: "#",
+  // },
+  // {
+  //   icon: discord,
+  //   link: "#",
+  // },
+  // {
+  //   icon: reddit,
+  //   link: "#",
+  // },
 ];
 const social = [
   {
@@ -76,11 +76,11 @@ const Community = () => {
           ))}
         </div>
         <div
-          className=" grid grid-flow-col gap-4 max-w-xs mx-auto mt-20"
+          className=" grid grid-flow-col justify-center gap-4 max-w-xs mx-auto mt-20"
           data-aos="fade-up"
         >
           {socialLinks.map((val, i) => (
-            <a href={val.link}>
+            <a href={val.link} key={i}>
               <img src={val.icon} alt="" />
             </a>
           ))}

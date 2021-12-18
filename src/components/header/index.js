@@ -1,7 +1,8 @@
 import { useState, useRef, useEffect } from "react";
 import Logo from "../../assets/images/Logo.png";
-import Lunar from "../../assets/images/lunar.png";
+// import Lunar from "../../assets/images/lunar.png";
 import { HiMenuAlt3 } from "react-icons/hi";
+import Image from "../../assets/images/header-image.jpg";
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -25,7 +26,7 @@ const Header = () => {
 
   return (
     <div className="bg-gray text-white">
-      <div className="container py-4 flex justify-between">
+      <div className="container py-4 flex justify-between items-center">
         <div>
           <img src={Logo} alt="" className=" w-64" />
         </div>
@@ -38,10 +39,10 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <button className="flex items-center bg-dark-400 rounded-md  py-2.5 px-4 ml-2 ">
-              <img src={Lunar} alt="" className="w-4 mr-2" />
-              <span className="font-medium">Buy at Lunar Exchange</span>
-            </button>
+            <div className="text-center">
+              Audited by
+              <img src={Image} alt="" className="w-40" />
+            </div>
           </li>
         </ul>
         <button
@@ -71,10 +72,14 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <button className="flex items-center bg-dark-400 rounded-md  py-2.5 px-4 ml-2 ">
+            {/* <button className="flex items-center bg-dark-400 rounded-md  py-2.5 px-4 ml-2 ">
               <img src={Lunar} alt="" className="w-4 mr-2" />
               <span className="font-medium">Buy at Lunar Exchange</span>
-            </button>
+            </button> */}
+            <div className="text-center">
+              Audited by
+              <img src={Image} alt="" className="w-40" />
+            </div>
           </li>
         </ul>
       </div>

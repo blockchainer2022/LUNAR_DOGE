@@ -5,6 +5,7 @@ import ExchangeImage from "../assets/images/exchange.png";
 import ChartImage from "../assets/images/chart.png";
 import ScanImage from "../assets/images/scan.png";
 import Clipboard from "../components/clipboard";
+import moment from "moment";
 const cardData = [
   {
     img: ExchangeImage,
@@ -20,14 +21,36 @@ const cardData = [
   },
 ];
 
-const BannerBottom = () => {
+const BannerBottom = ({
+  totalSupplyFormated,
+  totalSoldFormatted,
+  totalSupply,
+  totalSold,
+  days,
+  minutes,
+  hours,
+  seconds,
+  startTime,
+  endTime,
+}) => {
+  const progress = (Number(totalSold) / Number(totalSupply)) * 100;
+  const width =
+    progress > 0
+      ? Math.floor(progress) + 1 >= 100
+        ? 100
+        : Math.floor(progress) + 1
+      : 0;
+
+  // console.log(typeof progress, width);
+  var s = new Date(Number(startTime * 1000)).toUTCString();
+  var e = new Date(Number(endTime * 1000)).toUTCString();
+  // console.log(+new moment(`${s} 00:00:00`).utc() > +new Date());
+  const start = +new moment(`${s}`).utc() > +new Date();
+
+  const end = +new moment(`${e}`).utc() < +new Date();
   return (
     <div>
-      <div
-        className="container banner-bottom"
-        data-aos="fade-down"
-        data-aos-delay="500"
-      >
+      <div className="container banner-bottom" data-aos="fade-in">
         <Clipboard />
       </div>
       <div className="ico-section bg-dark-500 py-10">
@@ -36,40 +59,53 @@ const BannerBottom = () => {
             className="text-primary font-bold text-center text-3xl lg:text-5xl"
             data-aos="fade-down"
           >
-            ICO Starts In
+            {start ? "ICO Starts in" : end ? "ICO has ended" : "ICO ends in"}
           </p>
           <div
             className="text-white grid justify-center gap-10  grid-flow-col text-center mt-10"
             data-aos="fade-down"
           >
             <div>
-              <p className="font-bold 2xl lg:text-6xl mb-2">00</p>
+              <p className="font-bold 2xl lg:text-6xl mb-2">
+                {days.toString().padStart(2, "0")}
+              </p>
               <p className="text-xl lg:text-3xl font-bold">Days</p>
             </div>
             <div>
-              <p className="font-bold 2xl lg:text-6xl  mb-2">00</p>
+              <p className="font-bold 2xl lg:text-6xl  mb-2">
+                {hours.toString().padStart(2, "0")}
+              </p>
               <p className="text-xl lg:text-3xl font-bold">Hrs.</p>
             </div>
             <div>
-              <p className="font-bold 2xl lg:text-6xl  mb-2">00</p>
+              <p className="font-bold 2xl lg:text-6xl  mb-2">
+                {minutes.toString().padStart(2, "0")}
+              </p>
               <p className="text-xl lg:text-3xl font-bold">Min.</p>
             </div>
             <div>
-              <p className="font-bold 2xl lg:text-6xl  mb-2">00</p>
+              <p className="font-bold 2xl lg:text-6xl  mb-2">
+                {seconds.toString().padStart(2, "0")}
+              </p>
               <p className="text-xl lg:text-3xl font-bold">Sec.</p>
             </div>
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-bold text-xl lg:text-3xl mb-2">
-              <p>0</p>
-              <p>0</p>
+              <p>{totalSoldFormatted}</p>
+              <p>{totalSupplyFormated}</p>
             </div>
-            <div className="border-4 border-white rounded-lg progress-container">
-              <div className="bg-primary rounded-lg progress-inner"></div>
+            <div className="border-4 border-white rounded-lg progress-container overflow-hidden">
+              <div
+                className="bg-primary rounded-lg progress-inner"
+                style={{
+                  width: `${width}%`,
+                }}
+              ></div>
             </div>
             <div className="flex justify-between items-center text-white  font-bold text-xl lg:text-3xl mt-2">
-              <p>Softcap in 20 days</p>
-              <p>Hardcap</p>
+              <p>Total Sold</p>
+              <p>ICO target</p>
             </div>
           </div>
         </div>

@@ -58,7 +58,7 @@ const Roadmap = () => {
               </h6>
               <ul className="md:ml-16 mt-8">
                 {v.list.map((val, i) => (
-                  <li className="flex  items-center py-1 text-xl">
+                  <li className="flex  items-center py-1 text-xl" key={i}>
                     <IoMdCheckmarkCircleOutline />{" "}
                     <span className="ml-2 block">{val}</span>
                   </li>

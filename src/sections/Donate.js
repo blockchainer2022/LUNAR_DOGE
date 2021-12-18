@@ -1,6 +1,7 @@
 import Title from "../components/title";
 import { FiCopy } from "react-icons/fi";
 import Barcode from "../assets/images/barcode.png";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 const account = "0xc748673057861a797275cd8a068abb95a902e8de";
 const Donate = () => {
   return (
@@ -26,7 +27,13 @@ const Donate = () => {
               <span className="hidden mr-2 sm:inline-block break-all ">
                 {account}
               </span>
-              <FiCopy />
+              <CopyToClipboard
+                text={account}
+                onCopy={() => alert(`${account} copid`)}
+                className="cursor-pointer"
+              >
+                <FiCopy />
+              </CopyToClipboard>
             </p>
             <p className="text-white mt-8">
               <b className="text-primary ">Accepted:</b> BNB, Etherium, or $Doge

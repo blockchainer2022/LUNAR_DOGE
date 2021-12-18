@@ -33,14 +33,16 @@ const Details = () => {
       <div className="container" data-aos="fade-up">
         <Title />
         <div className="grid md:grid-cols-2 mt-20 gap-y-20 md:gap-10 lg:gap-0">
-          <div className="text-white lg:pr-10 lg:pb-32 lg:border-r-2 lg:border-b-2 border-primary">
+          <div className="text-white lg:pr-14 lg:pb-32 lg:border-r-2 lg:border-b-2 border-primary">
             <div className="flex items-center">
               <img src={data[0].img} alt="" className="w-20 lg:w-36" />
               <h4 className="text-2xl lg:text-4xl font-bold text-primary ml-8">
                 {data[0].title}
               </h4>
             </div>
-            <p className="text-lg lg:text-2xl mt-8">{data[0].desc}</p>
+            <p className="font-light text-lg lg:text-3xl mt-8">
+              {data[0].desc}
+            </p>
           </div>
           <div className="text-white lg:pl-10 lg:pb-32  lg:border-b-2 border-primary">
             <div className="flex items-center">
@@ -49,7 +51,9 @@ const Details = () => {
                 {data[1].title}
               </h4>
             </div>
-            <p className="text-lg lg:text-2xl mt-8">{data[1].desc}</p>
+            <p className="font-light text-lg lg:text-3xl mt-8">
+              {data[1].desc}
+            </p>
           </div>
           <div className="text-white lg:pr-10 lg:pt-14 lg:border-r-2  border-primary">
             <div className="flex items-center">
@@ -58,7 +62,9 @@ const Details = () => {
                 {data[2].title}
               </h4>
             </div>
-            <p className="text-lg lg:text-2xl mt-8">{data[2].desc}</p>
+            <p className="font-light text-lg lg:text-3xl mt-8">
+              {data[2].desc}
+            </p>
           </div>
           <div className="text-white lg:pl-10 lg:pt-14 lg:pb-20 border-primary">
             <div className="flex items-center">
@@ -67,7 +73,9 @@ const Details = () => {
                 {data[3].title}
               </h4>
             </div>
-            <p className="text-lg lg:text-2xl mt-8">{data[3].desc}</p>
+            <p className="font-light text-lg lg:text-3xl mt-8">
+              {data[3].desc}
+            </p>
           </div>
         </div>
       </div>

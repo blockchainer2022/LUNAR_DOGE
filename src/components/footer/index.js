@@ -31,9 +31,11 @@ const Footer = () => {
                 <img src={Logo} alt="" className="mx-auto" />
               </div>
             </div>
-            <div className="text-center ">
-              Audited by
-              <img src={Image} alt="" className="w-32" />
+            <div className="text-center text-white">
+              <p className="text-white font-bold text-xl text-center">
+                Audited By
+              </p>
+              <img src={Image} alt="" className="w-32 mx-auto  mt-10" />
             </div>
             <div>
               <p className="text-white font-bold text-xl text-center">

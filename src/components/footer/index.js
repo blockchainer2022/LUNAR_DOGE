@@ -54,9 +54,7 @@ const Footer = () => {
               </p>
               <button className="flex items-center mt-10 bg-dark-400 rounded-md  py-2.5 px-4 mx-auto ">
                 <img src={Lunar} alt="" className="w-4 mr-2" />
-                <span className="font-medium text-white">
-                  Buy at Lunar Exchange
-                </span>
+                <span className="font-medium text-white">Buy at LunarSwap</span>
               </button>
             </div>
           </div>

@@ -100,11 +100,11 @@ const linkList = [
     link: "#details",
   },
   {
-    text: "Exchange",
+    text: "Buy",
     link: "#exchange",
   },
   {
-    text: "Document",
+    text: "Documents",
     link: "#document",
   },
   {

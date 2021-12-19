@@ -9,7 +9,7 @@ import moment from "moment";
 const cardData = [
   {
     img: ExchangeImage,
-    text: "Lunar Doge Exchange",
+    text: "LunarSwap",
   },
   {
     img: ChartImage,

@@ -13,15 +13,15 @@ import {
 
 const iconList = [
   {
-    link: "#",
+    link: "https://t.me/Lunar_Doge",
     icon: <FaTelegramPlane />,
   },
   {
-    link: "#",
+    link: "https://twitter.com/Lunar__Doge",
     icon: <FaTwitter />,
   },
   {
-    link: "#",
+    link: "https://www.instagram.com/lunar.doge/?hl=en",
     icon: <FaInstagram />,
   },
   // {
@@ -65,7 +65,9 @@ const Banner = () => {
                   <li key={i}>
                     <a
                       href={v.link}
+                      target="_blank"
                       className="w-14 h-14 border border-white bg-black  grid place-content-center text-2xl  md:text-3xl hover:bg-primary hover:text-black transition-all duration-300 rounded-sm"
+                      rel="noreferrer"
                     >
                       {v.icon}
                     </a>
@@ -76,7 +78,7 @@ const Banner = () => {
               <button className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize">
                 <img src={Lunar2} alt="" className="  w-10" />{" "}
                 <span className="font-medium ml-3 inline-block text-base">
-                  LunarExchange
+                  LunarSwap
                 </span>
               </button>
             </div>

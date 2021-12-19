@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Title from "../components/title";
+import Dog from "../assets/images/roket-dog.png";
 const accordianData = [
   {
     question:
@@ -8,19 +9,14 @@ const accordianData = [
       "We are working tirelessly to source new marketing partnerships and achieve new listings; refer to our roadmap and viewed pinned TG messages to keep up to date with our current marketing efforts and updates! ",
   },
   {
-    question: "Why can't I buy?",
+    question: "Why can't I buy? ",
     answer:
-      "When you own a GoosePunk this is your own character in the metaverse, a cyberpunk/steampunk themed character. Owner ship of a GoosePunk is your exclusive invitation into the Gaggle, a place where other Geese meetup, hangout, relax, exchange art and talk about strategies moving forward inside the dystopian world of Ayame. ",
+      "Make sure your slippage tolerance is set to at least 12%, and increase it to 18% or higher if necessary. If issues persist message @Lunar_Doge_Dev on TG or reach out via other socials.",
   },
   {
     question: "How Can I Help?",
     answer:
-      "When you own a GoosePunk this is your own character in the metaverse, a cyberpunk/steampunk themed character. Owner ship of a GoosePunk is your exclusive invitation into the Gaggle, a place where other Geese meetup, hangout, relax, exchange art and talk about strategies moving forward inside the dystopian world of Ayame. ",
-  },
-  {
-    question: "How Can I Help?",
-    answer:
-      "When you own a GoosePunk this is your own character in the metaverse, a cyberpunk/steampunk themed character. Owner ship of a GoosePunk is your exclusive invitation into the Gaggle, a place where other Geese meetup, hangout, relax, exchange art and talk about strategies moving forward inside the dystopian world of Ayame. ",
+      "uy Lunar Doge, shill our marketing in other TG chats, comment on our promoted posts, spread the word on other social medias, tell all your friends, make an optional donation, and more to do your part taking Lunar Doge to the moon!",
   },
 ];
 
@@ -35,7 +31,10 @@ const Index = () => {
   };
 
   return (
-    <section className=" faq pt-14  md:pt-28 pb-20 text-dark" id="faq">
+    <section className=" faq pt-14  md:pt-28 pb-20 text-dark relative" id="faq">
+      <div className="rocket-dog absolute  left-2/3">
+        <img src={Dog} alt="" />
+      </div>
       <div className="container">
         <Title title="Frequently Asked Question" backtext="FAQ" />
         <div className=" mt-20">

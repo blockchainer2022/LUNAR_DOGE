@@ -29,7 +29,8 @@
 }
 
 .faq {
-  background-image: url(../assets/images/faq.png);
+  /* background-image: url(../assets/images/faq.png); */
+  background-color: white;
   background-size: cover;
 }
 

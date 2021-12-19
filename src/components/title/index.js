@@ -15,7 +15,7 @@ const Title = ({ title = "Details", backtext = "Details", black = false }) => {
         className="mx-auto  animate-bounce"
       />
       <h2
-        className={`text-4xl sm:text-5xl font-bold text-bold ${
+        className={`text-4xl capitalize sm:text-5xl font-bold text-bold ${
           black ? "text-black" : "text-primary"
         } `}
       >

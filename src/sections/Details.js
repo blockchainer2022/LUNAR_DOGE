@@ -8,7 +8,7 @@ const data = [
   {
     img: details1,
     title: "Token Burn",
-    desc: "We will burn 75% of the token supply upon launch. This will ensure that presale buyers 1.5X their money upon launch.",
+    desc: "We will burn 75% of the token supply during the ICO. The presale rate, launch rate, and token burn have been deliberately set so that presale investors will 1.5x their money upon launch",
   },
   {
     img: details2,
@@ -22,8 +22,8 @@ const data = [
   },
   {
     img: details4,
-    title: "Self-sufficient",
-    desc: "A portion of fees will be allocated to the marketing wallet, granting an Very Large source of funding. The more Lunar Doge we sell, the more disposable income available for large strategic marketing campaigns.",
+    title: "Self-Sufficient",
+    desc: "A portion of fees will be allocated to the marketing wallet, granting an very large source of funding. The more Lunar Doge we sell, the more disposable income available for large strategic marketing campaigns.",
   },
 ];
 

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import Title from "../components/title";
 import Twitter from "../assets/images/twitter.png";
 import Tele from "../assets/images/telegram.png";
@@ -11,11 +12,11 @@ import Facebook from "../assets/images/facebook.png";
 const socialLinks = [
   {
     icon: Telegrammini,
-    link: "#",
+    link: "https://t.me/Lunar_Doge",
   },
   {
     icon: TwitterMini,
-    link: "#",
+    link: "https://twitter.com/Lunar__Doge",
   },
   {
     icon: Facebook,

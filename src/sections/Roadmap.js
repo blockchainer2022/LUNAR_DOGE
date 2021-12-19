@@ -46,7 +46,7 @@ const Roadmap = () => {
   return (
     <section className="roadmap pt-14 lg:pt-40 pb-20" id="roadmap">
       <div className="container">
-        <Title title="Lunar doge Roadmap" backtext="Board" />
+        <Title title="Lunar Doge Roadmap" backtext="Board" />
         <div className="grid md:grid-cols-2 gap-8 mt-40">
           {data.map((v, i) => (
             <div

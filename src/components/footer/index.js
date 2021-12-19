@@ -2,7 +2,7 @@ import Clipboard from "../clipboard";
 import Logo from "../../assets/images/Logo.png";
 import { FaTelegramPlane, FaTwitter, FaInstagram } from "react-icons/fa";
 import Lunar from "../../assets/images/lunar.png";
-
+import Image from "../../assets/images/header-image.jpg";
 const iconList = [
   {
     link: "#",
@@ -25,11 +25,15 @@ const Footer = () => {
         <div className="">
           <Clipboard />
 
-          <div className="grid sm:grid-cols-3 gap-10  mx-auto mt-4 items-center">
+          <div className="grid sm:grid-cols-4 gap-10  mt-4 items-center">
             <div>
               <div>
                 <img src={Logo} alt="" className="mx-auto" />
               </div>
+            </div>
+            <div className="text-center ">
+              Audited by
+              <img src={Image} alt="" className="w-32" />
             </div>
             <div>
               <p className="text-white font-bold text-xl text-center">

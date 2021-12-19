@@ -3,7 +3,7 @@ import { Layout } from "../components";
 import Banner from "../sections/Banner";
 import BannerBottom from "../sections/BannerBottom";
 import Details from "../sections/Details";
-import HowtoBuy from "../sections/HowtoBuy";
+// import HowtoBuy from "../sections/HowtoBuy";
 import Documents from "../sections/Documents";
 import Tokenomics from "../sections/Tokenomics";
 import Roadmap from "../sections/Roadmap";
@@ -21,7 +21,7 @@ const Home = () => {
         const { data } = await axios.get(
           "http://65.0.243.32/api/lunardoge/get-ico-details-testnet.php"
         );
-        console.log(data.data);
+
         setData(data.data);
       } catch (error) {
         console.log(error);
@@ -71,7 +71,7 @@ const Home = () => {
         endTime={data.endTime}
       />
       <Details />
-      <HowtoBuy />
+      {/* <HowtoBuy /> */}
       <Documents />
       <Tokenomics />
       <Roadmap />

@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 // import Bsc from "../assets/images/bscc.png";
 // import { FaAngleDown } from "react-icons/fa";
@@ -59,13 +60,17 @@ const BannerBottom = ({
             className="text-primary font-bold text-center text-3xl lg:text-5xl"
             data-aos="fade-down"
           >
-            {start ? "ICO Starts in" : end ? "ICO has ended" : "ICO ends in"}
+            {/* {start ? "ICO Starts in" : end ? "ICO has ended" : "ICO ends in"} */}
+            ICO Starts at
           </p>
           <div
             className="text-white grid justify-center gap-10  grid-flow-col text-center mt-10"
             data-aos="fade-down"
           >
-            <div>
+            <p className="font-bold text-2xl lg:text-4xl mb-2">
+              23rd Dec 2021 2:00AM UTC
+            </p>
+            {/* <div>
               <p className="font-bold 2xl lg:text-6xl mb-2">
                 {days.toString().padStart(2, "0")}
               </p>
@@ -88,12 +93,12 @@ const BannerBottom = ({
                 {seconds.toString().padStart(2, "0")}
               </p>
               <p className="text-xl lg:text-3xl font-bold">Sec.</p>
-            </div>
+            </div> */}
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
-              <p>{totalSoldFormatted}</p>
-              <p>{totalSupplyFormated}</p>
+              <p>0</p>
+              <p>2.6B</p>
             </div>
             <div className="border-4 border-white rounded-lg progress-container overflow-hidden">
               <div

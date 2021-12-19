@@ -84,7 +84,7 @@ const Banner = () => {
             </div>
           </div>
           <div className="text-center " data-aos="fade-left">
-            <img src={Doge} alt="" className="mx-auto max-w-md" />
+            <img src={Doge} alt="" className="mx-auto max-w-md w-full" />
           </div>
         </div>
       </div>

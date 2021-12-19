@@ -44,7 +44,7 @@ const Banner = () => {
       <div className="container py-20 pb-48">
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-8 items-center">
           <div className="mt-20 lg:mt-0" data-aos="fade-right">
-            <h1 className="text-4xl md:text-5xl font-bold text-center lg:text-left">
+            <h1 className="text-4xl md:text-5xl capitalize font-bold text-center lg:text-left">
               <span className="text-white mb-2.5 inline-block">
                 Blast off With
               </span>
@@ -54,7 +54,7 @@ const Banner = () => {
                 <img src={Rocket} alt="" className="ml-4" />
               </span>
             </h1>
-            <p className="text-center lg:text-left text-gray-400 mt-5 max-w-3xl mx-auto w-full">
+            <p className="text-center lg:text-left text-gray-400 mt-5   mx-auto w-full capitalize text-sm">
               With our large marketing team, rewarding tokenomics, and ambitious
               roadmap, we're confident Lunar Doge will soar farther than any
               other Doge coin.
@@ -65,7 +65,7 @@ const Banner = () => {
                   <li key={i}>
                     <a
                       href={v.link}
-                      className="w-16 h-16 border border-white bg-black  grid place-content-center text-2xl hover:bg-primary hover:text-black transition-all duration-300 rounded-sm"
+                      className="w-14 h-14 border border-white bg-black  grid place-content-center text-2xl  md:text-3xl hover:bg-primary hover:text-black transition-all duration-300 rounded-sm"
                     >
                       {v.icon}
                     </a>
@@ -73,16 +73,16 @@ const Banner = () => {
                 ))}
                 <li></li>
               </ul>
-              <button className="banner-button mt-6 lg:mt-0 flex items-center py-2 px-7 text-white capitalize">
-                <img src={Lunar2} alt="" className="  w-14" />{" "}
-                <span className="font-bold ml-4 inline-block text-lg">
+              <button className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize">
+                <img src={Lunar2} alt="" className="  w-10" />{" "}
+                <span className="font-medium ml-3 inline-block text-base">
                   LunarExchange
                 </span>
               </button>
             </div>
           </div>
           <div className="text-center " data-aos="fade-left">
-            <img src={Doge} alt="" className="mx-auto" />
+            <img src={Doge} alt="" className="mx-auto max-w-md" />
           </div>
         </div>
       </div>

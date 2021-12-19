@@ -15,7 +15,7 @@ const Tokenomics = () => {
             <p className="text-primary text-center font-black text-9xl big-text">
               3%
             </p>
-            <p className="text-2xl md:text-3xl  lg:text-5xl text-center  max-w-lg  w-full mx-auto font-normal mt-10">
+            <p className="text-2xl md:text-2xl  lg:text-5xl text-center  max-w-lg  w-full mx-auto font-normal mt-10">
               Of Each Transaction Added to Liquidity
             </p>
           </div>

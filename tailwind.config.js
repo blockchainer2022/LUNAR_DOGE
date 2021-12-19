@@ -12,7 +12,7 @@ module.exports = {
         dark: {
           400: "#212425",
           500: "#191712",
-          600:"#181818"
+          600: "#181818",
         },
         gray: {
           DEFAULT: "#374045",
@@ -27,7 +27,7 @@ module.exports = {
         screens: {
           lg: "1140px",
           xl: "1140px",
-          "2xl": "1320px",
+          "2xl": "1140px",
         },
       },
       fontfamily: {

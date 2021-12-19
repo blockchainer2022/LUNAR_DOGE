@@ -42,22 +42,22 @@ const Index = () => {
           {accordianData.map((v, i) => (
             <div
               key={i}
-              className=" border-2 border-primary   p-4 px-6  mb-4 rounded-xl transition-all ease-out duration-500  max-w-4xl mx-auto"
+              className=" border-2 border-primary   py-2 px-6  mb-4 rounded-xl transition-all ease-out duration-500  max-w-4xl mx-auto"
               data-aos="fade-down"
             >
               <div
-                className="flex  justify-between cursor-pointer py-4"
+                className="flex  justify-between cursor-pointer py-3"
                 onClick={() => toggle(i)}
               >
                 <h6
                   className={` transition-all  duration-500 ${
                     clicked === i ? "text-primary " : ""
-                  } text-xl uppercase font-bold`}
+                  } text-lg uppercase font-bold`}
                   style={{ userSelect: "none" }}
                 >
                   {v.question}
                 </h6>
-                <span className="transition-all  duration-500  w-6 h-6 border-2 border-primary text-primary grid place-content-center rounded-md flex-shrink-0">
+                <span className="transition-all  duration-500  w-5 h-5 border-2 border-primary text-primary grid place-content-center rounded-sm flex-shrink-0 text-xs">
                   <i
                     className={`fas transition-all  duration-500 ${
                       clicked === i ? "fa-minus" : "fa-plus"

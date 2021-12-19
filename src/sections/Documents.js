@@ -15,7 +15,7 @@ const Documents = () => {
               {" "}
               White Paper
             </button>
-            <button className="mx-auto block capitalize bg-primary text-black font-bold py-2.5  px-10 rounded-md text-xl md:text-3xl">
+            <button className="mx-auto block capitalize bg-primary text-black font-bold py-2.5  px-6 rounded-md text-xl md:text-3xl">
               {" "}
               Audit (in progress)
             </button>

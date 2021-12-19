@@ -91,7 +91,7 @@ const BannerBottom = ({
             </div>
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
-            <div className="flex justify-between items-center text-white  font-bold text-xl lg:text-3xl mb-2">
+            <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
               <p>{totalSoldFormatted}</p>
               <p>{totalSupplyFormated}</p>
             </div>
@@ -103,7 +103,7 @@ const BannerBottom = ({
                 }}
               ></div>
             </div>
-            <div className="flex justify-between items-center text-white  font-bold text-xl lg:text-3xl mt-2">
+            <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mt-2">
               <p>Total Sold</p>
               <p>ICO target</p>
             </div>

@@ -3,6 +3,7 @@ import Logo from "../../assets/images/Logo.png";
 // import Lunar from "../../assets/images/lunar.png";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Image from "../../assets/images/header-image.jpg";
+import "./style.css";
 const Header = () => {
   const [show, setShow] = useState(false);
 
@@ -26,9 +27,9 @@ const Header = () => {
 
   return (
     <div className="bg-gray text-white">
-      <div className="container py-4 flex justify-between items-center">
-        <div>
-          <img src={Logo} alt="" className=" w-64" />
+      <div className="container pb-3 pt-2 flex justify-between items-center">
+        <div className="logo">
+          <img src={Logo} alt="" className=" w-54" />
         </div>
         <ul className="xl:flex items-center hidden ">
           {linkList.map((val, i) => (
@@ -39,9 +40,9 @@ const Header = () => {
             </li>
           ))}
           <li>
-            <div className="text-center">
+            <div className="text-center ">
               Audited by
-              <img src={Image} alt="" className="w-40" />
+              <img src={Image} alt="" className="w-32" />
             </div>
           </li>
         </ul>

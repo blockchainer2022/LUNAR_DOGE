@@ -59,7 +59,7 @@ const Community = () => {
           on the lookout for impersonators and never give out your wallet
           information
         </p>
-        <div
+        {/* <div
           className=" max-w-4xl mx-auto mt-20 grid sm:grid-cols-2 gap-14"
           data-aos="fade-down"
         >
@@ -74,7 +74,7 @@ const Community = () => {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
         <div
           className=" grid grid-flow-col justify-center gap-4 max-w-xs mx-auto mt-20"
           data-aos="fade-up"

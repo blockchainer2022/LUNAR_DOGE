@@ -10,13 +10,13 @@ const HowtoBuy = () => {
     <div className="bg-white py-20 buy" id="exchange">
       <div className="container" data-aos="fade-down">
         <Title title="How To Buy Lunar Doge" backtext="How to Buy2" />
-        <div className=" md:flex mt-32">
+        <div className=" md:flex mt-20">
           <div className="flex justify-between md:block">
             {[1, 2, 3, 4, 5, 6].map((val, i) => (
               <div
                 key={i}
                 onClick={() => setCurrentActive(i)}
-                className={` mb-20  cursor-pointer ${
+                className={` mb-14  cursor-pointer ${
                   currentActive === i
                     ? "border-b-4 md:border-l-4 md:border-b-0 border-primary text-primary "
                     : "text-gray-600"
@@ -54,17 +54,17 @@ const Box1 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       1
     </div>
-    <div className=" mt-20">
-      <img src={Metamask} alt="" className=" w-80 mx-auto" />
+    <div className=" mt-14">
+      <img src={Metamask} alt="" className=" w-60 mx-auto" />
     </div>
-    <p className="font-medium text-base sm:text-2xl mt-6">
+    <p className="font-bold text-base sm:text-xl mt-6">
       Download MetaMask, Trust Wallet, or use an existing wallet
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-2xl max-w-3xl mx-auto mt-8">
+    <p className="font-normal text-gray-500 text-base sm:text-xl max-w-3xl mx-auto mt-8">
       Head to metamask.io and download their wallet to your Smart Phone or
       Chrome/Firefox browser.
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-2xl  mx-auto mt-8">
+    <p className="font-normal text-gray-500 text-base sm:text-xl  mx-auto mt-8">
       (This is where your LunarDoge Tokens will be securely stored.)
     </p>
     <button className="bg-primaryLight py-3 px-10 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl">
@@ -77,17 +77,17 @@ const Box2 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       2
     </div>
-    <div className=" mt-20">
-      <img src={Pancakes} alt="" className=" w-80 mx-auto" />
+    <div className=" mt-14">
+      <img src={Pancakes} alt="" className=" w-60 mx-auto" />
     </div>
-    <p className="font-medium text-base sm:text-2xl mt-6">
+    <p className="font-medium text-base sm:text-xl mt-6">
       Go to PancakeSwap (pancakeswap.finance)
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-2xl max-w-3xl mx-auto mt-8">
+    <p className="font-normal text-gray-500 text-base sm:text-xl max-w-3xl mx-auto mt-8">
       PancakeSwap is where you'll be performing the swap of your current tokens
       to Baby Doge
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-2xl  mx-auto mt-8">
+    <p className="font-normal text-gray-500 text-base sm:text-xl  mx-auto mt-8">
       (Make sure you have already purchased BNB to perform this exchange.)
     </p>
     <button className="bg-primaryLight py-3 px-10 rounded-sm uppercase font-medium text-base mt-16 shadow-2xl">
@@ -100,7 +100,7 @@ const Box3 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       3
     </div>
-    <div className=" mt-20">
+    <div className=" mt-14">
       <img src={Pancakes2} alt="" className=" w-20 mx-auto" />
     </div>
     <p className="font-medium text-lg mt-6">

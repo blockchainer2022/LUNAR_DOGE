@@ -13,12 +13,12 @@ const Donate = () => {
           we are today! As a community powered project, donations are greatly
           appreciated and can be made at the link below.
         </p>
-        <div className="grid sm:grid-cols-2 mt-32 max-w-4xl mx-auto items-center ">
+        <div className="grid sm:grid-cols-2 mt-32 max-w-5xl mx-auto items-center ">
           <div data-aos="fade-right">
             <h3 className="font-bold text-primary capitalize text-3xl">
               wallet address
             </h3>
-            <p className="text-white flex items-center mt-2">
+            <p className="text-white flex text-lg items-center mt-2">
               <span className="sm:hidden  mr-2 inline-block break-all ">
                 {account.slice(0, 8) +
                   "..." +
@@ -35,7 +35,7 @@ const Donate = () => {
                 <FiCopy />
               </CopyToClipboard>
             </p>
-            <p className="text-white mt-8">
+            <p className="text-white text-xl mt-8 font-medium">
               <b className="text-primary ">Accepted:</b> BNB, Etherium, or $Doge
             </p>
           </div>
@@ -43,7 +43,7 @@ const Donate = () => {
             <img
               src={Barcode}
               alt=""
-              className="mx-auto mt-8 sm:mt-0 sm:mr-0 sm:ml-auto  w-40 sm:w-60"
+              className="mx-auto mt-8 sm:mt-0 sm:mr-0 sm:ml-auto  max-w-xs"
             />
           </div>
         </div>

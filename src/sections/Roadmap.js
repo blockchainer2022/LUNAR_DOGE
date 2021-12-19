@@ -8,13 +8,14 @@ const data = [
       "Website Launch",
       "1000 Telegram Members",
       "Twitter Marketing Campaign",
-      "Token Burn, Audit",
+      "Token Burn",
+      " Audit",
     ],
   },
   {
     title: "Phase 2 - Atmosphere",
     list: [
-      "Token Burn, Audit",
+      "3000 Telegram Members",
       "1500 Holders",
       "CMC Listing",
       "Coin Gecko Listing",
@@ -34,7 +35,7 @@ const data = [
     title: "Phase 4 - Space",
     list: [
       "100,000+ Holders",
-      "Integrated NFT Marketplace   ",
+      "Integrated NFT Marketplace",
       "Celebrity Partnerships",
       "Cross-Platform Marketing Campaign",
     ],
@@ -50,15 +51,15 @@ const Roadmap = () => {
           {data.map((v, i) => (
             <div
               key={i}
-              className="pb-10  md:pb-40 bg-dark-600 border border-primary p-6  md:p-10 text-white rounded-2xl"
+              className="pb-10  md:pb-28 bg-dark-600 border border-primary p-6  md:p-10 text-white rounded-2xl"
               data-aos={i % 2 === 0 ? "fade-right" : "fade-left"}
             >
-              <h6 className="text-primary text-2xl sm:text-4xl font-bold text-center">
+              <h6 className="text-primary text-2xl sm:text-3xl font-bold text-center">
                 {v.title}
               </h6>
               <ul className="md:ml-16 mt-8">
                 {v.list.map((val, i) => (
-                  <li className="flex  items-center py-1 text-xl" key={i}>
+                  <li className="flex  items-center py-1 text-lg" key={i}>
                     <IoMdCheckmarkCircleOutline />{" "}
                     <span className="ml-2 block">{val}</span>
                   </li>

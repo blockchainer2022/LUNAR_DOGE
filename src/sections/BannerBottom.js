@@ -51,7 +51,15 @@ const BannerBottom = ({
 
   const end = +new moment(`${e}`).utc() < +new Date();
   return (
-    <div>
+    <div className="relative">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 banner-bottom-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container banner-bottom" data-aos="fade-in">
         <Clipboard />
       </div>

@@ -5,15 +5,15 @@ import Lunar from "../../assets/images/lunar.png";
 import Image from "../../assets/images/header-image.jpg";
 const iconList = [
   {
-    link: "#",
+    link: "https://t.me/Lunar_Doge",
     icon: <FaTelegramPlane />,
   },
   {
-    link: "#",
+    link: "https://twitter.com/Lunar__Doge",
     icon: <FaTwitter />,
   },
   {
-    link: "#",
+    link: "https://www.instagram.com/lunar.doge/?hl=en",
     icon: <FaInstagram />,
   },
 ];
@@ -46,7 +46,9 @@ const Footer = () => {
                   <li key={i}>
                     <a
                       href={v.link}
+                      target="_blank"
                       className="w-10 h-10 border border-white bg-black  grid place-content-center text-lg hover:bg-primary hover:text-black transition-all duration-300"
+                      rel="noreferrer"
                     >
                       {v.icon}
                     </a>

@@ -4,8 +4,8 @@ import Twitter from "../assets/images/twitter.png";
 import Tele from "../assets/images/telegram.png";
 import Telegrammini from "../assets/images/telegrammini.png";
 import TwitterMini from "../assets/images/twittermini.png";
-import Facebook from "../assets/images/facebook.png";
-// import Instagram from "../assets/images/instagram.png";
+// import Facebook from "../assets/images/facebook.png";
+import Instagram from "../assets/images/instagram.png";
 // import discord from "../assets/images/discord.png";
 // import reddit from "../assets/images/reddit.png";
 
@@ -19,8 +19,8 @@ const socialLinks = [
     link: "https://twitter.com/Lunar__Doge",
   },
   {
-    icon: Facebook,
-    link: "#",
+    icon: Instagram,
+    link: "https://www.instagram.com/lunar.doge/?hl=en",
   },
   // {
   //   icon: Instagram,
@@ -81,7 +81,7 @@ const Community = () => {
           data-aos="fade-up"
         >
           {socialLinks.map((val, i) => (
-            <a href={val.link} key={i}>
+            <a href={val.link} key={i} target="_blank" rel="noreferrer">
               <img src={val.icon} alt="" />
             </a>
           ))}

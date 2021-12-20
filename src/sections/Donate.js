@@ -2,10 +2,20 @@ import Title from "../components/title";
 import { FiCopy } from "react-icons/fi";
 import Barcode from "../assets/images/barcode.png";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import Star from "../assets/images/Vector.png";
 const account = "0xc748673057861a797275cd8a068abb95a902e8de";
+
 const Donate = () => {
   return (
-    <section className="donate pt-14 md:pt-32 pb-20" id="donations">
+    <section className="donate pt-14 md:pt-32 pb-20 relative" id="donations">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 donate-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container">
         <Title title="Feel like donating?" backtext="Donating" />
         <p className=" max-w-3xl mx-auto text-white font-normal text-xl text-center mt-10 capitalize">

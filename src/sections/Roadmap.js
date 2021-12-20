@@ -1,6 +1,6 @@
 import Title from "../components/title";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-
+import Star from "../assets/images/Vector.png";
 const data = [
   {
     title: "Phase 1 - Takeoff",
@@ -44,7 +44,15 @@ const data = [
 
 const Roadmap = () => {
   return (
-    <section className="roadmap pt-14 lg:pt-40 pb-20" id="roadmap">
+    <section className="roadmap pt-14 lg:pt-40 pb-20 relative" id="roadmap">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 roadmap-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container">
         <Title title="Lunar Doge Roadmap" backtext="Board" />
         <div className="grid md:grid-cols-2 gap-8 mt-40">

@@ -1,9 +1,18 @@
 import React from "react";
 import Title from "../components/title";
 import Doge from "../assets/images/doge.png";
+import Star from "../assets/images/Vector.png";
 const Documents = () => {
   return (
-    <section className="document-bg py-14 md:py-20" id="document">
+    <section className="document-bg py-14 md:py-20 relative" id="document">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 document-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container">
         <Title backtext="Documents" title="Our Documents" />
         <div className="grid md:grid-cols-2  mt-20 items-center">

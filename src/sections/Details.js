@@ -3,7 +3,7 @@ import details1 from "../assets/images/detail1.png";
 import details2 from "../assets/images/detail2.png";
 import details3 from "../assets/images/detail3.png";
 import details4 from "../assets/images/detail4.png";
-
+import Star from "../assets/images/Vector.png";
 const data = [
   {
     img: details1,
@@ -29,7 +29,17 @@ const data = [
 
 const Details = () => {
   return (
-    <section className="py-20 details" id="details">
+    <section className="py-20 details relative" id="details">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map(
+        (v) => (
+          <img
+            src={Star}
+            alt=""
+            className={` absolute animate-pulse top-1/3 details-star${v}`}
+            key={v}
+          />
+        )
+      )}
       <div className="container" data-aos="fade-up">
         <Title />
         <div className="grid md:grid-cols-2 mt-20 gap-y-20 md:gap-10 lg:gap-0">

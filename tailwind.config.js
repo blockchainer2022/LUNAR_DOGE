@@ -33,6 +33,12 @@ module.exports = {
       fontfamily: {
         sans: ["Open Sans", "sans-serif"],
       },
+      keyframes: {
+        move: {
+          "0%, 100%": { transform: "translateX(0%)" },
+          "50%": { transform: "rotate(10%)" },
+        },
+      },
     },
   },
   variants: {

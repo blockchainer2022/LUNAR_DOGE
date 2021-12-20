@@ -31,6 +31,7 @@ const Header = () => {
         <div className="logo">
           <img src={Logo} alt="" className=" w-54" />
         </div>
+
         <ul className="xl:flex items-center hidden ">
           {linkList.map((val, i) => (
             <li key={i}>
@@ -39,13 +40,12 @@ const Header = () => {
               </a>
             </li>
           ))}
-          <li>
-            <div className="text-center ">
-              Audited by
-              <img src={Image} alt="" className="w-32" />
-            </div>
-          </li>
         </ul>
+        <div className="text-center ">
+          Audited by
+          <img src={Image} alt="" className="w-32" />
+        </div>
+
         <button
           className="xl:hidden text-3xl  cursor-pointer"
           onClick={menuHandler}

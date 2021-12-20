@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Title from "../components/title";
 import Dog from "../assets/images/roket-dog.png";
+import Star from "../assets/images/Vector.png";
 const accordianData = [
   {
     question:
@@ -16,7 +17,7 @@ const accordianData = [
   {
     question: "How Can I Help?",
     answer:
-      "uy Lunar Doge, shill our marketing in other TG chats, comment on our promoted posts, spread the word on other social medias, tell all your friends, make an optional donation, and more to do your part taking Lunar Doge to the moon!",
+      "Buy Lunar Doge, shill our marketing in other TG chats, comment on our promoted posts, spread the word on other social medias, tell all your friends, make an optional donation, and more to do your part taking Lunar Doge to the moon!",
   },
 ];
 
@@ -32,6 +33,14 @@ const Index = () => {
 
   return (
     <section className=" faq pt-14  md:pt-28 pb-20 text-dark relative" id="faq">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 document-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="rocket-dog absolute  left-2/3">
         <img src={Dog} alt="" />
       </div>

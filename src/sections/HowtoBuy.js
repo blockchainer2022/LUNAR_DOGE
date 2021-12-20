@@ -1,8 +1,9 @@
 import { useState } from "react";
 import Title from "../components/title";
 import Metamask from "../assets/images/metamask.png";
-import Pancakes from "../assets/images/pancakeswap.png";
-import Pancakes2 from "../assets/images/pancakeswap-1.png";
+import Moon from "../assets/images/bannerSide.png";
+import Pancakes2 from "../assets/images/Binance.svg";
+import TrustWallet from "../assets/images/trust-wallet.svg";
 const HowtoBuy = () => {
   const [currentActive, setCurrentActive] = useState(0);
 
@@ -54,22 +55,32 @@ const Box1 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       1
     </div>
-    <div className=" mt-14">
-      <img src={Metamask} alt="" className=" w-60 mx-auto" />
+    <div className=" mt-14 grid  grid-flow-col justify-center gap-4 items-center">
+      <img src={Metamask} alt="" className=" w-60 " />
+      <img src={TrustWallet} alt="" className=" w-60 " />
     </div>
-    <p className="font-bold text-base sm:text-xl mt-6">
-      Download MetaMask, Trust Wallet, or use an existing wallet
+    <p className="font-bold text-base sm:text-xl mt-6 max-w-xl mx-auto">
+      Download Metamask or TrustWallet to your Smart Phone or browser to store
+      your LunarDoge Tokens
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-xl max-w-3xl mx-auto mt-8">
-      Head to metamask.io and download their wallet to your Smart Phone or
-      Chrome/Firefox browser.
-    </p>
-    <p className="font-normal text-gray-500 text-base sm:text-xl  mx-auto mt-8">
-      (This is where your LunarDoge Tokens will be securely stored.)
-    </p>
-    <button className="bg-primaryLight py-3 px-10 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl">
-      Download Metamask
-    </button>
+    <div className="grid grid-flow-col justify-center items-center gap-4">
+      <a
+        href="https://trustwallet.com/download-page/"
+        className="bg-primaryLight py-3 px-6 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Download Metamask
+      </a>
+      <a
+        href="https://metamask.io/download"
+        target="_blank"
+        rel="noreferrer"
+        className="bg-primaryLight py-3 px-6 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl"
+      >
+        Download Trust Wallet
+      </a>
+    </div>
   </>
 );
 const Box2 = () => (
@@ -78,21 +89,17 @@ const Box2 = () => (
       2
     </div>
     <div className=" mt-14">
-      <img src={Pancakes} alt="" className=" w-60 mx-auto" />
+      <h3 className="font-bold text-3xl">LunarSwap</h3>
     </div>
-    <p className="font-medium text-base sm:text-xl mt-6">
-      Go to PancakeSwap (pancakeswap.finance)
+
+    <p className="font-medium text-base sm:text-xl mt-6  max-w-sm mx-auto">
+      Purchase BNB and navigate to LunarSwap to exchange your BNB for LunarDoge
+      tokens
     </p>
-    <p className="font-normal text-gray-500 text-base sm:text-xl max-w-3xl mx-auto mt-8">
-      PancakeSwap is where you'll be performing the swap of your current tokens
-      to Baby Doge
-    </p>
-    <p className="font-normal text-gray-500 text-base sm:text-xl  mx-auto mt-8">
-      (Make sure you have already purchased BNB to perform this exchange.)
-    </p>
-    <button className="bg-primaryLight py-3 px-10 rounded-sm uppercase font-medium text-base mt-16 shadow-2xl">
+
+    {/* <button className="bg-primaryLight py-3 px-10 rounded-sm uppercase font-medium text-base mt-16 shadow-2xl">
       Buy W / Pancakesswap
-    </button>
+    </button> */}
   </>
 );
 const Box3 = () => (
@@ -100,19 +107,17 @@ const Box3 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       3
     </div>
-    <div className=" mt-14">
-      <img src={Pancakes2} alt="" className=" w-20 mx-auto" />
+    <div className=" mt-10">
+      <img src={Pancakes2} alt="" className=" w-40 mx-auto" />
     </div>
-    <p className="font-medium text-lg mt-6">
-      When you are in PancakeSwap, navigate to the trade screen
-    </p>
+
     <p className="font-normal text-gray-500 text-lg max-w-3xl mx-auto mt-2">
-      Click “Connect” at the top right of the screen, and then navigate to
-      “Trade” on the left sidebar.
+      Click 'connect wallet' in the top right to connect your Metamask or
+      Trustwallet
     </p>
-    <p className="font-normal  text-lg max-w-3xl mx-auto mt-2">
+    <p className="font-normal  text-lg max-w-3xl w-full mx-auto mt-2">
       {
-        " If using MetaMask, go to Settings –> Networks –> Add Network And put in this information…"
+        "  For Metamask users, Navigate to Settings -> Networks -> Add Network and put in the following information to add the Smart Chain Network"
       }
     </p>
     <p className="font-normal text-gray-500 text-lg   mx-auto mt-2">
@@ -142,24 +147,12 @@ const Box4 = () => (
     </div>
 
     <p className="font-medium text-lg mt-10">
-      Return to the PancakeSwap exchange window and please select the DOGE
-      token. To Manually Search:
+      Set the slippage tolerance to 12% (18% or higher if that doesn't work) and
+      trade the desired about of BNB for LunarDoge tokens
     </p>
-    <p className="font-normal text-gray-500 text-lg max-w-3xl mx-auto mt-2">
-      1. Click on the “Select a Currency” button, and then enter the DOGE token
-      contract:
-    </p>
-
-    <p className="font-normal text-gray-500 text-lg   mx-auto mt-2">
-      0xca1ec90bd4c5665e85b93f1696cc1907bf53a6a9
-    </p>
-    <p className="font-normal text-gray-500 text-lg   mx-auto mt-2">
-      2. You should see DOGE in the drop down list.
-    </p>
-    <p className="font-normal text-gray-500 text-lg   mx-auto mt-2">
-      3. If you see a popup window to add the token for swapping, please check
-      “I Understand” and
-      <br /> then click on “Import”
+    <p className="font-normal text-gray-500 text-lg max-w-3xl w-full mx-auto mt-2">
+      Gas fees are a few extra dollars so be sure to have some spare BNB in your
+      account!
     </p>
   </>
 );
@@ -169,12 +162,9 @@ const Box5 = () => (
       5
     </div>
 
-    <p className="font-medium text-lg mt-10">
-      To confirm the accuracy of the trade, adjust your slippage to 12%
-    </p>
-    <p className="font-normal text-gray-500 text-lg max-w-3xl mx-auto mt-2">
-      Click “Settings” at the top right, and adjust your slippage to 12%
-      (dependent on demand).
+    <p className="font-medium text-lg mt-10 max-w-lg w-full mx-auto">
+      Import a custom token in MetaMask or TrustWallet to view your current
+      balance of LunarDoge.
     </p>
   </>
 );
@@ -183,17 +173,15 @@ const Box6 = () => (
     <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       6
     </div>
+    <div className="mt-10">
+      <img src={Moon} className=" w-40 mx-auto" alt="" />
+    </div>
+    <p className="font-normal text-gray-900 mt-4 text-xl ">
+      Now all that's left to do is hold your Lunar Doge
+    </p>
 
-    <p className="font-bold  mt-10 text-3xl md:text-4xl ">
-      You Are Now Ready to Swap for DOGE
-    </p>
-    <p className="font-light text-gray-500 text-lg max-w-3xl mx-auto mt-8">
-      Simply enter the amount that you want to buy and swap away!
-    </p>
-    <p className="font-light text-gray-500 text-lg max-w-3xl mx-auto mt-8">
-      Important: You’ll be charged separately for Gas Fees, which is usually a
-      single BNB fee that is under (or around) a dollar, so it’s helpful to
-      always keep at least a few dollars in BNB at all times.
+    <p className="font-bold   text-3xl md:text-4xl mt-4 ">
+      Next stop: the moon!
     </p>
   </>
 );

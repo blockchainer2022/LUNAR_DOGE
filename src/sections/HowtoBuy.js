@@ -4,11 +4,20 @@ import Metamask from "../assets/images/metamask.png";
 import Moon from "../assets/images/bannerSide.png";
 import Pancakes2 from "../assets/images/Binance.svg";
 import TrustWallet from "../assets/images/trust-wallet.svg";
+import Star from "../assets/images/Vector.png";
 const HowtoBuy = () => {
   const [currentActive, setCurrentActive] = useState(0);
 
   return (
-    <div className="bg-white py-20 buy" id="exchange">
+    <div className="bg-white py-20 relative buy" id="exchange">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={`hidden md:block absolute animate-pulse top-1/3 roadmap-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container" data-aos="fade-down">
         <Title title="How To Buy Lunar Doge" backtext="How to Buy2" />
         <div className=" md:flex mt-20">

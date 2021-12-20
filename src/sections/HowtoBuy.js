@@ -52,7 +52,7 @@ export default HowtoBuy;
 
 const Box1 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       1
     </div>
     <div className=" mt-14 grid  grid-flow-col justify-center gap-4 items-center">
@@ -70,7 +70,7 @@ const Box1 = () => (
         target="_blank"
         rel="noreferrer"
       >
-        Download Metamask
+        <span className="hidden sm:inline-block">Download </span> Metamask
       </a>
       <a
         href="https://metamask.io/download"
@@ -78,14 +78,14 @@ const Box1 = () => (
         rel="noreferrer"
         className="bg-primaryLight py-3 px-6 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl"
       >
-        Download Trust Wallet
+        <span className="hidden sm:inline-block">Download </span> Trust Wallet
       </a>
     </div>
   </>
 );
 const Box2 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       2
     </div>
     <div className=" mt-14">
@@ -104,7 +104,7 @@ const Box2 = () => (
 );
 const Box3 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       3
     </div>
     <div className=" mt-10">
@@ -142,7 +142,7 @@ const Box3 = () => (
 );
 const Box4 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       4
     </div>
 
@@ -158,7 +158,7 @@ const Box4 = () => (
 );
 const Box5 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       5
     </div>
 
@@ -170,11 +170,16 @@ const Box5 = () => (
 );
 const Box6 = () => (
   <>
-    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
+    <div className="w-12 h-12 sm:w-20 sm:h-20 font-bold text-2xl sm:text-4xl rounded-full grid  place-content-center bg-primary mx-auto">
       6
     </div>
     <div className="mt-10">
-      <img src={Moon} className=" w-40 mx-auto" alt="" />
+      <img
+        src={Moon}
+        className=" mx-auto w-full"
+        alt=""
+        style={{ maxWidth: "180px" }}
+      />
     </div>
     <p className="font-normal text-gray-900 mt-4 text-xl ">
       Now all that's left to do is hold your Lunar Doge

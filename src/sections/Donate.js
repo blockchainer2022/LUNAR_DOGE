@@ -12,7 +12,7 @@ const Donate = () => {
         <img
           src={Star}
           alt=""
-          className={` absolute animate-pulse top-1/3 donate-star${v}`}
+          className={`hidden sm:block absolute animate-pulse top-1/3 donate-star${v}`}
           key={v}
         />
       ))}
@@ -39,7 +39,7 @@ const Donate = () => {
               </span>
               <CopyToClipboard
                 text={account}
-                onCopy={() => alert(`${account} copid`)}
+                onCopy={() => alert(`${account} copied`)}
                 className="cursor-pointer"
               >
                 <FiCopy />

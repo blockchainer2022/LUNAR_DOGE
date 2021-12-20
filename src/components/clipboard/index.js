@@ -19,7 +19,7 @@ const Clipboard = () => {
         <p className="hidden lg:block font-medium text-gray-700">{account}</p>
         <CopyToClipboard
           text={account}
-          onCopy={() => alert(`${account} copid`)}
+          onCopy={() => alert(`${account} copied`)}
         >
           <button className="rounded-xl hidden lg:block lg:pl-8 py-3 px-4 bg-black text-white font-semibold text-xl">
             Copy Address
@@ -27,7 +27,7 @@ const Clipboard = () => {
         </CopyToClipboard>
         <CopyToClipboard
           text={account}
-          onCopy={() => alert(`${account} copid`)}
+          onCopy={() => alert(`${account} copied`)}
         >
           <button className="rounded-xl lg:hidden  lg:pl-8 py-3 px-4 bg-black text-white">
             Copy

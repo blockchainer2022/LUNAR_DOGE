@@ -56,7 +56,7 @@ const BannerBottom = ({
         <img
           src={Star}
           alt=""
-          className={` absolute animate-pulse top-1/3 banner-bottom-star${v}`}
+          className={`hidden md:block absolute animate-pulse top-1/3 banner-bottom-star${v}`}
           key={v}
         />
       ))}

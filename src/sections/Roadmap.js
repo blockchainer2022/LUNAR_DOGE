@@ -49,7 +49,7 @@ const Roadmap = () => {
         <img
           src={Star}
           alt=""
-          className={` absolute animate-pulse top-1/3 roadmap-star${v}`}
+          className={`hidden md:block absolute animate-pulse top-1/3 roadmap-star${v}`}
           key={v}
         />
       ))}

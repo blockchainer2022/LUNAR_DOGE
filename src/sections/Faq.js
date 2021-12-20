@@ -37,7 +37,7 @@ const Index = () => {
         <img
           src={Star}
           alt=""
-          className={` absolute animate-pulse top-1/3 document-star${v}`}
+          className={`hidden sm:block absolute animate-pulse top-1/3 document-star${v}`}
           key={v}
         />
       ))}

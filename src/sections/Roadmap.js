@@ -16,23 +16,23 @@ const data = [
     title: "Phase 2 - Atmosphere",
     list: [
       "3000 Telegram Members",
-      "1500 Holders",
+      "2000 Holders",
       "CMC Listing",
       "Coin Gecko Listing",
       "Brand Ambassadors",
     ],
   },
   {
-    title: "Phase 3 - Lunar",
+    title: "Phase 3 - Space",
     list: [
       "5000 Telegram Members",
-      "50,000 Holders",
+      "25,000 Holders",
       "Massive Airdrop Giveaways",
       "TikTok Marketing Campaign",
     ],
   },
   {
-    title: "Phase 4 - Space",
+    title: "Phase 4 - Lunar",
     list: [
       "100,000+ Holders",
       "Integrated NFT Marketplace",

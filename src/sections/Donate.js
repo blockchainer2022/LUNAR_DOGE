@@ -19,7 +19,7 @@ const Donate = () => {
       <div className="container">
         <Title title="Feel like donating?" backtext="Donating" />
         <p className=" max-w-3xl mx-auto text-white font-normal text-xl text-center mt-10 capitalize">
-          e'd like to thank all our generous donors for helping us get to where
+          We'd like to thank all our generous donors for helping us get to where
           we are today! As a community powered project, donations are greatly
           appreciated and can be made at the link below.
         </p>

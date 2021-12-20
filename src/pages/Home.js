@@ -23,6 +23,7 @@ const Home = () => {
         );
 
         setData(data.data);
+        console.log(data.data);
       } catch (error) {
         console.log(error);
       }
@@ -59,9 +60,9 @@ const Home = () => {
     <Layout>
       <Banner />
       <BannerBottom
-        totalSupplyFormated={data.total_supply_formatted}
+        totalSupplyFormated={data.ICOtarget_formatted}
         totalSoldFormatted={data.total_sold_formatted}
-        totalSupply={data.total_supply}
+        totalSupply={data.ICOtarget}
         totalSold={data.total_sold}
         days={days}
         hours={hours}

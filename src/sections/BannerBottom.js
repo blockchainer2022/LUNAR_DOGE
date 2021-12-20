@@ -106,8 +106,8 @@ const BannerBottom = ({
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
-              <p>0</p>
-              <p>2.6B</p>
+              <p>{totalSoldFormatted}</p>
+              <p>{totalSupplyFormated}</p>
             </div>
             <div className="border-4 border-white rounded-lg progress-container overflow-hidden">
               <div

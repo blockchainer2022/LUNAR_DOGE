@@ -7,6 +7,7 @@ import ChartImage from "../assets/images/chart.png";
 import ScanImage from "../assets/images/scan.png";
 import Clipboard from "../components/clipboard";
 import moment from "moment";
+import Star from "../assets/images/Vector.png";
 const cardData = [
   {
     img: ExchangeImage,

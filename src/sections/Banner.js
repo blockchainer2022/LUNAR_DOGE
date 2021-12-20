@@ -9,6 +9,7 @@ import {
   // FaFacebookF,
   // FaDiscord,
 } from "react-icons/fa";
+import Star from "../assets/images/Vector.png";
 // import { AiOutlineReddit } from "react-icons/ai";
 
 const iconList = [
@@ -40,7 +41,15 @@ const iconList = [
 
 const Banner = () => {
   return (
-    <section className="banner">
+    <section className="banner relative">
+      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15].map((v) => (
+        <img
+          src={Star}
+          alt=""
+          className={` absolute animate-pulse top-1/3 banner-star${v}`}
+          key={v}
+        />
+      ))}
       <div className="container py-20 pb-48">
         <div className="grid lg:grid-cols-2 gap-20 lg:gap-8 items-center">
           <div className="mt-20 lg:mt-0" data-aos="fade-right">

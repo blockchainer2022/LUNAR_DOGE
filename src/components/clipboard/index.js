@@ -1,7 +1,7 @@
 import Bsc from "../../assets/images/bscc.png";
 import { FaAngleDown } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
-const account = "0xc748673057861a797275cd8a068abb95a902e8de";
+const account = "0x5400EdD0e597527C7e9651fC4A48f1b1f3Aa0d17";
 const Clipboard = () => {
   return (
     <div className="bg-primary rounded-2xl lg:mx-10 py-4 lg:py-14 px-4 lg:px-10 xl:px-40 copy-board shadow-xl">

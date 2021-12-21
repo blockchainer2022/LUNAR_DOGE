@@ -84,12 +84,17 @@ const Banner = () => {
                 ))}
                 <li></li>
               </ul>
-              <button className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize">
+              <a
+                href="http://swap.lunardogetoken.com/"
+                target="_blank"
+                className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize"
+                rel="noreferrer"
+              >
                 <img src={Lunar2} alt="" className="  w-10" />{" "}
                 <span className="font-medium ml-3 inline-block text-base">
                   LunarSwap
                 </span>
-              </button>
+              </a>
             </div>
           </div>
           <div className="text-center " data-aos="fade-left">

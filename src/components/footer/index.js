@@ -60,10 +60,15 @@ const Footer = () => {
               <p className="text-white font-bold text-xl text-center">
                 Buy Lunar
               </p>
-              <button className="flex items-center mt-10 bg-dark-400 rounded-md  py-2.5 px-4 mx-auto ">
+              <a
+                href="http://swap.lunardogetoken.com/"
+                target="_blank"
+                className="flex items-center mt-10 bg-dark-400 rounded-md  max-w-max  py-2.5 px-4 mx-auto "
+                rel="noreferrer"
+              >
                 <img src={Lunar} alt="" className="w-4 mr-2" />
                 <span className="font-medium text-white">Buy at LunarSwap</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>

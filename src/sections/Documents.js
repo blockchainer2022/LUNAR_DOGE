@@ -20,10 +20,15 @@ const Documents = () => {
             <img src={Doge} alt="" />
           </div>
           <div data-aos="fade-left">
-            <button className="bg-primary mx-auto mb-4 md:mb-10 block text-black font-bold py-2.5  px-10 rounded-md text-xl md:text-3xl">
+            <a
+              href="https://adobe.ly/3H1OLjC"
+              target="_blank"
+              className="bg-primary mx-auto mb-4 md:mb-10 max-w-max block text-black font-bold py-2.5  px-10 rounded-md text-xl md:text-3xl"
+              rel="noreferrer"
+            >
               {" "}
               White Paper
-            </button>
+            </a>
             <button className="mx-auto block capitalize bg-primary text-black font-bold py-2.5  px-6 rounded-md text-xl md:text-3xl">
               {" "}
               Audit

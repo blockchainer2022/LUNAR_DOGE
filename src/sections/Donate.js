@@ -1,9 +1,9 @@
 import Title from "../components/title";
 import { FiCopy } from "react-icons/fi";
-import Barcode from "../assets/images/barcode.png";
+import Barcode from "../assets/images/scan.jpg";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import Star from "../assets/images/Vector.png";
-const account = "0xc748673057861a797275cd8a068abb95a902e8de";
+const account = "0x62425222fbc70be79ce1e4cFd4136e5C9d247E2c";
 
 const Donate = () => {
   return (
@@ -49,7 +49,7 @@ const Donate = () => {
               <b className="text-primary ">Accepted:</b> BNB, Etherium, or $Doge
             </p>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left ">
             <img
               src={Barcode}
               alt=""

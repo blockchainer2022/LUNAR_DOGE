@@ -12,14 +12,17 @@ const cardData = [
   {
     img: ExchangeImage,
     text: "LunarSwap",
+    link: "https://swap.lunardogetoken.com/",
   },
   {
     img: ChartImage,
     text: "View chart",
+    link: "https://poocoin.app/tokens/0x5400edd0e597527c7e9651fc4a48f1b1f3aa0d17",
   },
   {
     img: ScanImage,
     text: "check bSC SCAN",
+    link: "https://bscscan.com/address/0x5400EdD0e597527C7e9651fC4A48f1b1f3Aa0d17#code",
   },
 ];
 
@@ -106,8 +109,9 @@ const BannerBottom = ({
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
-              <p>{totalSoldFormatted}</p>
-              <p>{totalSupplyFormated}</p>
+              <p>{totalSoldFormatted}.00BNB</p>
+              <p>150BNB</p>
+              <p>250BNB</p>
             </div>
             <div className="border-4 border-white rounded-lg progress-container overflow-hidden">
               <div
@@ -119,7 +123,8 @@ const BannerBottom = ({
             </div>
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mt-2">
               <p>Total Sold</p>
-              <p>ICO target</p>
+              <p className="">Soft Cap</p>
+              <p>HardCap</p>
             </div>
           </div>
         </div>
@@ -127,10 +132,13 @@ const BannerBottom = ({
       <div className="bg-white  py-20">
         <div className="container grid sm:grid-cols-3 gap-8">
           {cardData.map((val, i) => (
-            <div
+            <a
+              href={val.link}
+              target="_blank"
               key={i}
-              className="text-center shadow-lg p-4 py-8 rounded-md"
+              className="block text-center shadow-lg p-4 py-8 rounded-md"
               data-aos="fade-up"
+              rel="noreferrer"
             >
               <div>
                 <img src={val.img} alt="" className="mx-auto w-16" />
@@ -138,7 +146,7 @@ const BannerBottom = ({
               <h3 className="font-bold text-xl md:text-3xl mt-6 capitalize">
                 {val.text}
               </h3>
-            </div>
+            </a>
           ))}
         </div>
       </div>

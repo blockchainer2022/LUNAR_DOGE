@@ -85,7 +85,7 @@ const Banner = () => {
                 <li></li>
               </ul>
               <a
-                href="http://swap.lunardogetoken.com/"
+                href="https://swap.lunardogetoken.com/"
                 target="_blank"
                 className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize"
                 rel="noreferrer"

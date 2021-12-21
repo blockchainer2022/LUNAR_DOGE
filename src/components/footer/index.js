@@ -61,7 +61,7 @@ const Footer = () => {
                 Buy Lunar
               </p>
               <a
-                href="http://swap.lunardogetoken.com/"
+                href="https://swap.lunardogetoken.com/"
                 target="_blank"
                 className="flex items-center mt-10 bg-dark-400 rounded-md  max-w-max  py-2.5 px-4 mx-auto "
                 rel="noreferrer"

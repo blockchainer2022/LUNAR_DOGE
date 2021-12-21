@@ -5,6 +5,7 @@ import Moon from "../assets/images/bannerSide.png";
 import Pancakes2 from "../assets/images/Binance.svg";
 import TrustWallet from "../assets/images/trust-wallet.svg";
 import Star from "../assets/images/Vector.png";
+import Lunar from "../assets/images/lunar.png";
 const HowtoBuy = () => {
   const [currentActive, setCurrentActive] = useState(0);
 
@@ -98,7 +99,15 @@ const Box2 = () => (
       2
     </div>
     <div className=" mt-14">
-      <h3 className="font-bold text-3xl">LunarSwap</h3>
+      <a
+        href="https://swap.lunardogetoken.com/"
+        target="_blank"
+        className="flex items-center mt-10 bg-dark-400 rounded-md  max-w-max  py-2.5 px-4 mx-auto "
+        rel="noreferrer"
+      >
+        <img src={Lunar} alt="" className="w-4 mr-2" />
+        <span className="font-medium text-white">Buy at LunarSwap</span>
+      </a>
     </div>
 
     <p className="font-medium text-base sm:text-xl mt-6  max-w-sm mx-auto">
@@ -120,7 +129,7 @@ const Box3 = () => (
       <img src={Pancakes2} alt="" className=" w-40 mx-auto" />
     </div>
 
-    <p className="font-normal text-gray-500 text-lg max-w-3xl mx-auto mt-2">
+    <p className="font-normal text-gray-500 text-lg max-w-3xl w-full mx-auto mt-2">
       Click 'connect wallet' in the top right to connect your Metamask or
       Trustwallet
     </p>
@@ -155,7 +164,7 @@ const Box4 = () => (
       4
     </div>
 
-    <p className="font-medium text-lg mt-10">
+    <p className="font-medium text-lg mt-10 max-w-xl mx-auto w-full">
       Set the slippage tolerance to 12% (18% or higher if that doesn't work) and
       trade the desired about of BNB for LunarDoge tokens
     </p>
@@ -174,6 +183,11 @@ const Box5 = () => (
     <p className="font-medium text-lg mt-10 max-w-lg w-full mx-auto">
       Import a custom token in MetaMask or TrustWallet to view your current
       balance of LunarDoge.
+    </p>
+    <p className="font-medium text-gray-700 text-lg mt-10 max-w-xl w-full mx-auto">
+      For TrustWallet Users, click the token button in the top right and scroll
+      to the bottom to import a custom token. Enter the token contract address
+      0x5400EdD0e597527C7e9651fC4A48f1b1f3Aa0d17 and import Lunar Doge
     </p>
   </>
 );

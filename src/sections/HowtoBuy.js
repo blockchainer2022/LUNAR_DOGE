@@ -75,7 +75,7 @@ const Box1 = () => (
     </p>
     <div className="grid grid-flow-col justify-center items-center gap-4">
       <a
-        href="https://trustwallet.com/download-page/"
+        href="https://metamask.io/download"
         className="bg-primaryLight py-3 px-6 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl"
         target="_blank"
         rel="noreferrer"
@@ -83,7 +83,7 @@ const Box1 = () => (
         <span className="hidden sm:inline-block">Download </span> Metamask
       </a>
       <a
-        href="https://metamask.io/download"
+        href="https://trustwallet.com/download-page/"
         target="_blank"
         rel="noreferrer"
         className="bg-primaryLight py-3 px-6 rounded-sm    uppercase font-medium text-base mt-16 shadow-2xl"

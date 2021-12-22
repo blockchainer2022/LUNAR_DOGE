@@ -21,7 +21,7 @@ const Documents = () => {
           </div>
           <div data-aos="fade-left">
             <a
-              href="https://adobe.ly/3H1OLjC"
+              href="https://woofpaper.lunardogetoken.com/lunardoge/Woofpaper.pdf"
               target="_blank"
               className="bg-primary mx-auto mb-4 md:mb-10 max-w-max block text-black font-bold py-2.5  px-10 rounded-md text-xl md:text-3xl"
               rel="noreferrer"

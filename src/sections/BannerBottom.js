@@ -31,6 +31,7 @@ const BannerBottom = ({
   totalSoldFormatted,
   totalSupply,
   totalSold,
+  data,
   days,
   minutes,
   hours,
@@ -38,7 +39,7 @@ const BannerBottom = ({
   startTime,
   endTime,
 }) => {
-  const progress = (Number(totalSold) / Number(totalSupply)) * 100;
+  const progress = (Number(data.funds_raised) / Number(totalSupply)) * 100;
   const width =
     progress > 0
       ? Math.floor(progress) + 1 >= 100
@@ -109,9 +110,12 @@ const BannerBottom = ({
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
-              <p>{totalSoldFormatted}.00BNB</p>
+              <p>{totalSoldFormatted == 0 ? "0.00" : totalSoldFormatted}</p>
               <p>125BNB</p>
-              <p>250BNB</p>
+              <p>
+                {data.total_supply_formatted ? data.total_supply_formatted : 0}
+                BNB
+              </p>
             </div>
             <div className="border-4 border-white rounded-lg progress-container overflow-hidden">
               <div
@@ -123,7 +127,7 @@ const BannerBottom = ({
             </div>
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mt-2">
               <p>Total Sold</p>
-              <p className="">Soft Cap</p>
+              <p className=" -ml-12">Soft Cap</p>
               <p>HardCap</p>
             </div>
           </div>

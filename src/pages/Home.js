@@ -19,7 +19,7 @@ const Home = () => {
     const getDetails = async () => {
       try {
         const { data } = await axios.get(
-          "https://defi.mobiwebsolutionz.com/api/lunardoge/get-ico-details-testnet.php"
+          "https://defi.mobiwebsolutionz.com/api/lunardoge/get-ico-details-live.php"
         );
 
         setData(data.data);
@@ -64,6 +64,7 @@ const Home = () => {
         totalSoldFormatted={data.total_sold_formatted}
         totalSupply={data.ICOtarget}
         totalSold={data.total_sold}
+        data={data}
         days={days}
         hours={hours}
         minutes={minutes}

@@ -35,7 +35,13 @@ const Footer = () => {
               <p className="text-white font-bold text-xl text-center">
                 Audited By
               </p>
-              <img src={Image} alt="" className="w-32 mx-auto  mt-10" />
+              <a
+                href="https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_LUNARDOGE.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Image} alt="" className="w-32 mx-auto  mt-10" />
+              </a>
             </div>
             <div>
               <p className="text-white font-bold text-xl text-center">

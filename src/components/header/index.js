@@ -43,7 +43,13 @@ const Header = () => {
         </ul>
         <div className="text-center ">
           Audited by
-          <img src={Image} alt="" className="w-32" />
+          <a
+            href="https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_LUNARDOGE.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={Image} alt="" className="w-32" />
+          </a>
         </div>
 
         <button
@@ -79,7 +85,13 @@ const Header = () => {
             </button> */}
             <div className="text-left">
               Audited by
-              <img src={Image} alt="" className="w-40 mt-1" />
+              <a
+                href="https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_LUNARDOGE.pdf"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Image} alt="" className="w-40 mt-1" />
+              </a>
             </div>
           </li>
         </ul>

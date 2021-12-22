@@ -46,7 +46,7 @@ const Donate = () => {
               </CopyToClipboard>
             </p>
             <p className="text-white text-xl mt-8 font-medium">
-              <b className="text-primary ">Accepted:</b> BNB, Etherium, or $Doge
+              <b className="text-primary ">Accepted:</b> BNB, Ethereum, or $Doge
             </p>
           </div>
           <div data-aos="fade-left ">

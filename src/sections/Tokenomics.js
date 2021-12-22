@@ -43,7 +43,7 @@ const Tokenomics = () => {
               2%
             </p>
             <p className="text-2xl md:text-3xl  lg:text-5xl text-center  max-w-lg  w-full mx-auto font-normal mt-10">
-              Of Each Transaction ReDistributed to Holders
+              Token Reflected to Holders
             </p>
           </div>
           <div data-aos="fade-left">

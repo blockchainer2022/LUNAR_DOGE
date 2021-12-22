@@ -29,10 +29,14 @@ const Documents = () => {
               {" "}
               White Paper
             </a>
-            <button className="mx-auto block capitalize bg-primary text-black font-bold py-2.5  px-6 rounded-md text-xl md:text-3xl">
-              {" "}
+            <a
+              href="https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_LUNARDOGE.pdf"
+              target="_blank"
+              className="bg-primary mx-auto mb-4 md:mb-10 max-w-max block text-black font-bold py-2.5  px-10 rounded-md text-xl md:text-3xl"
+              rel="noreferrer"
+            >
               Audit
-            </button>
+            </a>
           </div>
         </div>
       </div>

@@ -1,3 +1,4 @@
+/* eslint-disable eqeqeq */
 /* eslint-disable no-unused-vars */
 import React from "react";
 // import Bsc from "../assets/images/bscc.png";

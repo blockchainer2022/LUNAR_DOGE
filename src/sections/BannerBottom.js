@@ -73,8 +73,7 @@ const BannerBottom = ({
             className="text-primary font-bold text-center text-3xl lg:text-5xl"
             data-aos="fade-down"
           >
-            {/* {start ? "ICO Starts in" : end ? "ICO has ended" : "ICO ends in"} */}
-            ICO Starts at
+            {start ? "ICO Starts In" : end ? "ICO has ended" : "ICO ends In"}
           </p>
           <div
             className="text-white grid justify-center gap-10  grid-flow-col text-center mt-10"

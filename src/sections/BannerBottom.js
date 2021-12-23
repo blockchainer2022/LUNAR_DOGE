@@ -110,7 +110,12 @@ const BannerBottom = ({
           </div>
           <div className="progressbar mt-10" data-aos="fade-up">
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mb-2">
-              <p>{totalSoldFormatted == 0 ? "0.00" : totalSoldFormatted}</p>
+              <p>
+                {Number(data.funds_raised == 0 ? 0 : data.funds_raised).toFixed(
+                  2
+                )}{" "}
+                BNB
+              </p>
               <p>125BNB</p>
               <p>
                 {data.total_supply_formatted ? data.total_supply_formatted : 0}
@@ -126,8 +131,8 @@ const BannerBottom = ({
               ></div>
             </div>
             <div className="flex justify-between items-center text-white  font-semibold text-xl lg:text-3xl mt-2">
-              <p>Total Sold</p>
-              <p className=" -ml-12">Soft Cap</p>
+              <p> Funds Raised</p>
+              <p className="">Soft Cap</p>
               <p>HardCap</p>
             </div>
           </div>

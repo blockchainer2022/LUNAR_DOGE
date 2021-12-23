@@ -41,7 +41,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        <div className="text-center ">
+        <div className="text-center hidden xl:block ">
           Audited by
           <a
             href="https://github.com/Tech-Audit/Smart-Contract-Audits/blob/main/TECHAUDIT_LUNARDOGE.pdf"

@@ -2,6 +2,7 @@
   /* background-image: url(../assets/images/bannerBg@2.png); */
   /* background-size: cover; */
   background-color: #121113;
+  min-height: 100vh;
 }
 .banner-button {
   background: linear-gradient(

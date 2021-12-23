@@ -1,16 +1,10 @@
 import Rocket from "../assets/images/rocket.png";
 import "./style.css";
-import Doge from "../assets/images/bannerSide.png";
+// import Doge from "../assets/images/bannerSide.png";
 import Lunar2 from "../assets/images/lunar2.png";
-import {
-  FaTelegramPlane,
-  FaTwitter,
-  FaInstagram,
-  // FaFacebookF,
-  // FaDiscord,
-} from "react-icons/fa";
+import { FaTelegramPlane, FaTwitter, FaInstagram } from "react-icons/fa";
 import Star from "../assets/images/Vector.png";
-// import { AiOutlineReddit } from "react-icons/ai";
+import Vedio from "../assets/images/banner.mp4";
 
 const iconList = [
   {
@@ -25,18 +19,6 @@ const iconList = [
     link: "https://www.instagram.com/lunar.doge/?hl=en",
     icon: <FaInstagram />,
   },
-  // {
-  //   link: "#",
-  //   icon: <FaFacebookF />,
-  // },
-  // {
-  //   link: "#",
-  //   icon: <FaDiscord />,
-  // },
-  // {
-  //   link: "#",
-  //   icon: <AiOutlineReddit />,
-  // },
 ];
 
 const Banner = () => {
@@ -98,7 +80,17 @@ const Banner = () => {
             </div>
           </div>
           <div className="text-center " data-aos="fade-left">
-            <img src={Doge} alt="" className="mx-auto max-w-md w-full" />
+            {/* <img src={Doge} alt="" className="mx-auto max-w-md w-full" /> */}
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              className=" md:w-full"
+              // poster={BannerImg}
+            >
+              <source src={Vedio} type="video/mp4"></source>
+            </video>
           </div>
         </div>
       </div>

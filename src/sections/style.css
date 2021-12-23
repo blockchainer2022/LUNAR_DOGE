@@ -1,6 +1,7 @@
 .banner {
-  background-image: url(../assets/images/bannerBg@2.png);
-  background-size: cover;
+  /* background-image: url(../assets/images/bannerBg@2.png); */
+  /* background-size: cover; */
+  background-color: #121113;
 }
 .banner-button {
   background: linear-gradient(

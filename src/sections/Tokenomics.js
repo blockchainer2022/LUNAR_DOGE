@@ -1,6 +1,8 @@
 import React from "react";
 import Title from "../components/title";
 import Token1 from "../assets/images/tokenomic1.png";
+import Baby1 from "../assets/images/baby2.mp4";
+import Baby2 from "../assets/images/baby3.mp4";
 import Token2 from "../assets/images/tokenomic2.png";
 import Star from "../assets/images/Vector.png";
 const Tokenomics = () => {
@@ -18,7 +20,17 @@ const Tokenomics = () => {
         <Title title="Our Tokenomics" backtext="Tokenomics" />
         <div className="grid md:grid-cols-2 items-center mt-10 md:mt-0">
           <div data-aos="fade-right">
-            <img src={Token1} alt="" />
+            {/* <img src={Token1} alt="" /> */}
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              className=" md:w-full"
+              // poster={BannerImg}
+            >
+              <source src={Baby2} type="video/mp4"></source>
+            </video>
           </div>
           <div data-aos="fade-left">
             <p className="text-primary text-center font-black text-9xl big-text">
@@ -47,7 +59,17 @@ const Tokenomics = () => {
             </p>
           </div>
           <div data-aos="fade-left">
-            <img src={Token2} alt="" />
+            {/* <img src={Token2} alt="" /> */}
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              className=" md:w-full"
+              // poster={BannerImg}
+            >
+              <source src={Baby1} type="video/mp4"></source>
+            </video>
           </div>
         </div>
       </div>

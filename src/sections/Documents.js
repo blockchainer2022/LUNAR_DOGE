@@ -2,6 +2,7 @@ import React from "react";
 import Title from "../components/title";
 import Doge from "../assets/images/doge.png";
 import Star from "../assets/images/Vector.png";
+import Baby3 from "../assets/images/baby4.mp4";
 const Documents = () => {
   return (
     <section className="document-bg py-14 md:py-20 relative" id="document">
@@ -17,7 +18,17 @@ const Documents = () => {
         <Title backtext="Documents" title="Our Documents" />
         <div className="grid md:grid-cols-2  mt-20 items-center">
           <div className="mb-20 md:mb-0" data-aos="fade-right">
-            <img src={Doge} alt="" />
+            {/* <img src={Doge} alt="" /> */}
+            <video
+              autoPlay={true}
+              loop={true}
+              muted={true}
+              playsInline={true}
+              className=" md:w-full"
+              // poster={BannerImg}
+            >
+              <source src={Baby3} type="video/mp4"></source>
+            </video>
           </div>
           <div data-aos="fade-left">
             <a

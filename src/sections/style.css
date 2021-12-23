@@ -20,8 +20,9 @@
 }
 
 .document-bg {
-  background-image: url(../assets/images/document-bg.png);
-  background-size: cover;
+  /* background-image: url(../assets/images/document-bg.png); */
+  /* background-size: cover; */
+  background-color: #121113;
 }
 
 .roadmap {

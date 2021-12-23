@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/title";
-import Doge from "../assets/images/doge.png";
+// import Doge from "../assets/images/doge.png";
 import Star from "../assets/images/Vector.png";
 import Baby3 from "../assets/images/baby4.mp4";
 const Documents = () => {

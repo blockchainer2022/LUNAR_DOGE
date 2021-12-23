@@ -1,9 +1,9 @@
 import React from "react";
 import Title from "../components/title";
-import Token1 from "../assets/images/tokenomic1.png";
+// import Token1 from "../assets/images/tokenomic1.png";
 import Baby1 from "../assets/images/baby2.mp4";
 import Baby2 from "../assets/images/baby3.mp4";
-import Token2 from "../assets/images/tokenomic2.png";
+// import Token2 from "../assets/images/tokenomic2.png";
 import Star from "../assets/images/Vector.png";
 const Tokenomics = () => {
   return (

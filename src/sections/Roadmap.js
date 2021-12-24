@@ -6,38 +6,39 @@ const data = [
     title: "Phase 1 - Takeoff",
     list: [
       "Website Launch",
-      "1000 Telegram Members",
       "Twitter Marketing Campaign",
       "Token Burn",
       " Audit",
+      "1000 Telegram Members",
     ],
   },
   {
     title: "Phase 2 - Atmosphere",
     list: [
-      "3000 Telegram Members",
-      "2000 Holders",
       "CMC Listing",
       "Coin Gecko Listing",
       "Brand Ambassadors",
+      "3000 Telegram Members",
+      "2000 Holders",
     ],
   },
   {
     title: "Phase 3 - Space",
     list: [
+      "NFT Airdrop for ICO Investors",
+      "Play-to-Earn Game Beta Released",
+      "TikTok Marketing Campaign",
       "5000 Telegram Members",
       "25,000 Holders",
-      "Massive Airdrop Giveaways",
-      "TikTok Marketing Campaign",
     ],
   },
   {
     title: "Phase 4 - Lunar",
     list: [
-      "100,000+ Holders",
       "Integrated NFT Marketplace",
       "Celebrity Partnerships",
       "Cross-Platform Marketing Campaign",
+      "100,000+ Holders",
     ],
   },
 ];

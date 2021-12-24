@@ -67,13 +67,13 @@ const Footer = () => {
                 Buy Lunar
               </p>
               <a
-                href="https://www.pinksale.finance/#/launchpad/0x2b5FA9fFe79e61490f6f7a90b2C0eCAb914f3399?chain=BSC"
+                href="https://swap.lunardogetoken.com/"
                 target="_blank"
                 className="flex items-center mt-10 bg-dark-400 rounded-md  max-w-max  py-2.5 px-4 mx-auto "
                 rel="noreferrer"
               >
                 <img src={Lunar} alt="" className="w-4 mr-2" />
-                <span className="font-medium text-white">BUY PRESALE</span>
+                <span className="font-medium text-white">Buy at Lunarswap</span>
               </a>
             </div>
           </div>

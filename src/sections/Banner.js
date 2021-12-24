@@ -67,14 +67,14 @@ const Banner = () => {
                 <li></li>
               </ul>
               <a
-                href="https://www.pinksale.finance/#/launchpad/0x2b5FA9fFe79e61490f6f7a90b2C0eCAb914f3399?chain=BSC"
+                href="https://swap.lunardogetoken.com/"
                 target="_blank"
                 className="banner-button rounded-md mt-6 lg:mt-0 flex items-center py-2 px-5 text-white capitalize"
                 rel="noreferrer"
               >
                 <img src={Lunar2} alt="" className="  w-10" />{" "}
                 <span className="font-medium ml-3 inline-block text-base">
-                  BUY PRESALE
+                  Buy at LunarSwap
                 </span>
               </a>
             </div>

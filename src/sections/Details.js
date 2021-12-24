@@ -17,13 +17,13 @@ const data = [
   },
   {
     img: details3,
-    title: "Locked Liquidty",
+    title: "Locked Liquidity",
     desc: "ICO funds will be transfered and locked in the liquidity pool on PancakeSwap with proof provided across our socials, and 4% of fees will be distributed to the liquidity pool after launch.",
   },
   {
     img: details4,
     title: "Self-Sufficient",
-    desc: "A portion of fees will be allocated to the marketing wallet, granting an very large source of funding. The more Lunar Doge we sell, the more disposable income available for large strategic marketing campaigns.",
+    desc: "A portion of fees will be allocated to the marketing wallet, granting a very large source of funding. The more Lunar Doge we sell, the more disposable income available for large strategic marketing campaigns.",
   },
 ];
 

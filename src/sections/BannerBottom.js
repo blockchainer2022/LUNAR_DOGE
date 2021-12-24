@@ -114,12 +114,14 @@ const BannerBottom = ({
               <p>
                 {Number(data.funds_raised == 0 ? 0 : data.funds_raised).toFixed(
                   2
-                )}{" "}
+                )}
+                {""}
                 BNB
               </p>
-              <p>125BNB</p>
+              <p>25BNB</p>
               <p>
                 {data.total_supply_formatted ? data.total_supply_formatted : 0}
+                {""}
                 BNB
               </p>
             </div>

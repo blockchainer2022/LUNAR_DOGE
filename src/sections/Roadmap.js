@@ -38,6 +38,7 @@ const data = [
       "Integrated NFT Marketplace",
       "Celebrity Partnerships",
       "Cross-Platform Marketing Campaign",
+      "Play-to-Earn Mobile Game Launch",
       "100,000+ Holders",
     ],
   },
